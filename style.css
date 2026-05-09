@@ -1,0 +1,110 @@
+:root {
+  --bg: #152a54;
+  --ink: #000000;
+  --accent: #1A3263;
+  --card: #f8dec1;
+  --border: #616161;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+header, footer {
+  background: var(--card);
+  border-bottom: 2px solid var(--border);
+  padding: 16px 20px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 12px; /* flexbox spacing */
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent);
+  padding: 6px 10px;
+  border: 1px solid var(--accent);
+  border-radius: 6px; /* box model: border + padding */
+}
+
+main, section, article {
+  margin: 16px;
+  padding: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+#hero img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+}
+
+#education table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#education th,
+#education td {
+  border: 1px solid var(--border);
+  padding: 8px;
+  text-align: left;
+}
+
+#contact form {
+  display: grid; /* grid layout */
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+#contact button {
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
